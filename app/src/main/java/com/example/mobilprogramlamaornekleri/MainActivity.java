@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,24 +19,34 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this, MainActivityH1.class);
         startActivity(i);
     }
+
     public void h2(View view) {
         Intent i = new Intent(this, MainActivityH2.class);
         startActivity(i);
     }
+
     public void h3(View view) {
         Intent i = new Intent(this, MainActivityH3.class);
         startActivity(i);
     }
+
     public void h4(View view) {
         Intent i = new Intent(this, MainActivityH4.class);
         startActivity(i);
     }
+
     public void h5(View view) {
         Intent i = new Intent(this, MainActivityH5.class);
         startActivity(i);
     }
+
     public void h6(View view) {
         Intent i = new Intent(this, MainActivityH6.class);
+        startActivity(i);
+    }
+
+    public void h11(View view) {
+        Intent i = new Intent(this, MainActivity11.class);
         startActivity(i);
     }
 }

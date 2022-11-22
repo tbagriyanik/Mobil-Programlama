@@ -32,7 +32,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="h1"
-                android:text="Hafta 1"
+                android:text="Hafta 1 Hesap makinesi"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
@@ -44,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="h2"
-                android:text="Hafta 2"
+                android:text="Hafta 2 Toast"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
@@ -56,7 +56,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="h3"
-                android:text="Hafta 3"
+                android:text="Hafta 3 Hesaplama"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
@@ -68,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="h4"
-                android:text="Hafta 4"
+                android:text="Hafta 4 Art Azalt"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="h5"
-                android:text="Hafta 5"
+                android:text="Hafta 5 Şifreli giriş, Tahmin"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
@@ -92,103 +92,19 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="h6"
-                android:text="Hafta 6"
+                android:text="Hafta 6 Vücut kitle"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:typeface="monospace" />
 
             <Button
-                android:id="@+id/button7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="h7"
-                android:text="Hafta 7"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:typeface="monospace" />
-
-            <Button
-                android:id="@+id/button8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="h8"
-                android:text="Hafta 8"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:typeface="monospace" />
-
-            <Button
-                android:id="@+id/button9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="h9"
-                android:text="Hafta 9"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:typeface="monospace" />
-
-            <Button
-                android:id="@+id/button10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="h10"
-                android:text="Hafta 10"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:typeface="monospace" />
-
-            <Button
-                android:id="@+id/button11"
+                android:id="@+id/button19"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="casual"
                 android:onClick="h11"
-                android:text="Hafta 11"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:typeface="monospace" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="h12"
-                android:text="Hafta 12"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:typeface="monospace" />
-
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="h13"
-                android:text="Hafta 13"
-                android:textAlignment="center"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:typeface="monospace" />
-
-            <Button
-                android:id="@+id/button14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:fontFamily="casual"
-                android:onClick="h14"
-                android:text="Hafta 14"
+                android:text="Hafta 11 for/while"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
