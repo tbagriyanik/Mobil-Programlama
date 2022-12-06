@@ -1,7 +1,7 @@
 # Mobil Programlama
  Mobil Programlama Dersi 2022-2023
 
-![Ana Sayfa](https://github.com/tbagriyanik/Mobil-Programlama/blob/main/main.png)
+![Ana Sayfa](https://github.com/tbagriyanik/Mobil-Programlama/blob/main/main.jpg)
 ![Hafta 1](https://github.com/tbagriyanik/Mobil-Programlama/blob/main/h1.png)
 ![Hafta 2](https://github.com/tbagriyanik/Mobil-Programlama/blob/main/h2.png)
 ![Hafta 3](https://github.com/tbagriyanik/Mobil-Programlama/blob/main/h3.png)
