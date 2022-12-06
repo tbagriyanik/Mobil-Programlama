@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class MainActivity11 extends AppCompatActivity {
+public class MainActivityH11 extends AppCompatActivity {
     TextView sayi, carp, forLabel;
     EditText say1, say2, say3;
 

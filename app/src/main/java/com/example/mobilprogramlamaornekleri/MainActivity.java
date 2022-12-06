@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,7 +45,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void h11(View view) {
-        Intent i = new Intent(this, MainActivity11.class);
+        Intent i = new Intent(this, MainActivityH11.class);
+        startActivity(i);
+    }
+
+    public void h13(View view) {
+        Intent i = new Intent(this, MainActivityH13.class);
         startActivity(i);
     }
 }

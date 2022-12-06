@@ -110,6 +110,18 @@
                 android:textStyle="bold"
                 android:typeface="monospace" />
 
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:onClick="h13"
+                android:text="Hafta 13 random Intent prm"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
