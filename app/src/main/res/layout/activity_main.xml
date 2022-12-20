@@ -134,6 +134,18 @@
                 android:textStyle="bold"
                 android:typeface="monospace" />
 
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:onClick="h15"
+                android:text="Hafta 15 Asansör"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
