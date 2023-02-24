@@ -58,7 +58,7 @@
         tools:text="15" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/buttonh4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -66,25 +66,25 @@
         android:text="Sıfırla"
         android:theme="@style/ShapeAppearance.Material3.Corner.None"
         app:icon="@android:drawable/ic_menu_close_clear_cancel"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonh3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/button3" />
+        app:layout_constraintStart_toEndOf="@+id/buttonh3" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonh1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="basla"
         android:text="Başla"
         android:theme="@style/ShapeAppearance.Material3.Corner.None"
         app:icon="@android:drawable/ic_media_play"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button3"
-        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonh3"
+        app:layout_constraintEnd_toStartOf="@+id/buttonh3"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/buttonh3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
@@ -93,8 +93,8 @@
         android:theme="@style/ShapeAppearance.Material3.Corner.None"
         app:icon="@android:drawable/ic_media_pause"
         app:layout_constraintBottom_toTopOf="@+id/switch1"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintStart_toEndOf="@+id/button" />
+        app:layout_constraintEnd_toStartOf="@+id/buttonh4"
+        app:layout_constraintStart_toEndOf="@+id/buttonh1" />
 
     <TextView
         android:id="@+id/textView2"
@@ -105,8 +105,8 @@
         android:text="0"
         android:textColor="@color/purple_700"
         android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
-        app:layout_constraintEnd_toEndOf="@+id/button3" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonh3"
+        app:layout_constraintEnd_toEndOf="@+id/buttonh3" />
 
     <TextView
         android:id="@+id/textView13"

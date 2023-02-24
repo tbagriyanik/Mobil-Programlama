@@ -29,7 +29,7 @@ public class MainActivityH14 extends AppCompatActivity {
         //2. bağlantı
         sure = findViewById(R.id.textView2);
         bitis = findViewById(R.id.editTextNumber);
-        basla = findViewById(R.id.button);
+        basla = findViewById(R.id.buttonh1);
 
         bitis.setText("5");
 
