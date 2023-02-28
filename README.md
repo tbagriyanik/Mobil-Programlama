@@ -18,3 +18,4 @@
 
 2.Dönem
 ![Hafta 1](https://github.com/tbagriyanik/Mobil-Programlama/blob/main/donem2_h1.png)
+![Hafta 2](https://github.com/tbagriyanik/Mobil-Programlama/blob/main/donem2_h2.png)

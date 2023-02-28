@@ -1,12 +1,12 @@
 package com.example.mobilprogramlamaornekleri;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivityH2 extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class MainActivityH2 extends AppCompatActivity {
 
     public void mesaj(View view) {
 
-        EditText mk = (EditText) findViewById(R.id.metinKutusu1);
+        EditText mk = findViewById(R.id.metinKutusu1);
 
         Toast kendiMesajimiz = Toast.makeText(getApplicationContext(),
                 mk.getText(),

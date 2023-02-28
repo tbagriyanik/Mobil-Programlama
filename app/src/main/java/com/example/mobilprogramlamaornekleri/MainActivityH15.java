@@ -1,10 +1,10 @@
 package com.example.mobilprogramlamaornekleri;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivityH15 extends AppCompatActivity {
 
@@ -67,11 +67,11 @@ public class MainActivityH15 extends AppCompatActivity {
                                       kapi.animate().scaleX(1f).translationX(0).
                                               setStartDelay(1000).  //binmeye fırsat için gecikme
                                               withStartAction(new Runnable() {
-                                                  @Override
-                                                  public void run() {
-                                                      kapiHareketliMi = true;
-                                                  }
-                                              }).
+                                          @Override
+                                          public void run() {
+                                              kapiHareketliMi = true;
+                                          }
+                                      }).
                                               withEndAction(new Runnable() {
                                                   @Override
                                                   public void run() {

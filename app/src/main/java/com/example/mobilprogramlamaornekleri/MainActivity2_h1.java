@@ -1,7 +1,5 @@
 package com.example.mobilprogramlamaornekleri;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -12,13 +10,15 @@ import android.widget.ListView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class MainActivity2_h1 extends AppCompatActivity {
     ListView liste;
     Spinner spin;
-    String iller[] = {"İstanbul", "Ankara", "İzmir"};
-    String ilce1[] = {"Pendik", "Kartal", "Tuzla"};
-    String ilce2[] = {"Mamak", "Elmadağ", "Yenimahalle"};
-    String ilce3[] = {"Konak", "Balçova", "Narlıdere"};
+    String[] iller = {"İstanbul", "Ankara", "İzmir"};
+    String[] ilce1 = {"Pendik", "Kartal", "Tuzla"};
+    String[] ilce2 = {"Mamak", "Elmadağ", "Yenimahalle"};
+    String[] ilce3 = {"Konak", "Balçova", "Narlıdere"};
     String seciliListeden = "Hiçbirşey";
     String seciliAcilirListeden = "Hiçbirşey";
 
@@ -37,7 +37,7 @@ public class MainActivity2_h1 extends AppCompatActivity {
                 android.R.layout.simple_spinner_item, ilce3);
         adapterilce3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        spin = (Spinner) findViewById(R.id.spinner1);
+        spin = findViewById(R.id.spinner1);
         spin.setAdapter(adapterilce1);
         spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -61,7 +61,7 @@ public class MainActivity2_h1 extends AppCompatActivity {
             }
         });
 
-        liste = (ListView) findViewById(R.id.liste);
+        liste = findViewById(R.id.liste);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.activity_list_item, android.R.id.text1, iller);
 
@@ -78,9 +78,9 @@ public class MainActivity2_h1 extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         Toast.makeText(MainActivity2_h1.this,
-                                iller[position].toString() + " iline gezi " +
+                                iller[position] + " iline gezi " +
                                         "amaçlı gidilebilir", Toast.LENGTH_SHORT).show();
-                        seciliListeden = iller[position].toString();
+                        seciliListeden = iller[position];
 
                         if (seciliListeden.equals("İstanbul"))
                             spin.setAdapter(adapterilce1);
@@ -95,9 +95,9 @@ public class MainActivity2_h1 extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 Toast.makeText(MainActivity2_h1.this,
-                                        iller[position].toString() + " iline gezi " +
+                                        iller[position] + " iline gezi " +
                                                 "amaçlı gidilemez", Toast.LENGTH_SHORT).show();
-                                seciliListeden = iller[position].toString();
+                                seciliListeden = iller[position];
 
                                 if (seciliListeden.equals("İstanbul"))
                                     spin.setAdapter(adapterilce1);
@@ -120,7 +120,7 @@ public class MainActivity2_h1 extends AppCompatActivity {
         builder.setNegativeButton("Hayır, seçimi göster", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-                Toast.makeText(MainActivity2_h1.this, "İl " +seciliListeden + " seçildi.",
+                Toast.makeText(MainActivity2_h1.this, "İl " + seciliListeden + " seçildi.",
                         Toast.LENGTH_SHORT).show();
             }
         });

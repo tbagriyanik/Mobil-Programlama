@@ -1,10 +1,10 @@
 package com.example.mobilprogramlamaornekleri;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -70,6 +70,26 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void h2_1(View view) {
+        Intent i = new Intent(this, MainActivity2_h1.class);
+        startActivity(i);
+    }
+
+    public void h2_2(View view) {
+        Intent i = new Intent(this, MainActivity2_h2.class);
+        startActivity(i);
+    }
+
+    public void h2_3(View view) {
+        Intent i = new Intent(this, MainActivity2_h1.class);
+        startActivity(i);
+    }
+
+    public void h2_4(View view) {
+        Intent i = new Intent(this, MainActivity2_h1.class);
+        startActivity(i);
+    }
+
+    public void h2_5(View view) {
         Intent i = new Intent(this, MainActivity2_h1.class);
         startActivity(i);
     }

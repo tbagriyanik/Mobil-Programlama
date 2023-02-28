@@ -1,8 +1,8 @@
 package com.example.mobilprogramlamaornekleri;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivityH1 extends AppCompatActivity {
 

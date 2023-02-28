@@ -36,11 +36,12 @@
 
             <Button
                 android:id="@+id/buttonh1"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h1"
-                android:text="Hafta 1 Hesap makinesi"
+                android:text="(1. Dönem) Hafta 1 Hesap makinesi"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
@@ -48,8 +49,9 @@
 
             <Button
                 android:id="@+id/buttonh2"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h2"
                 android:text="Hafta 2 Toast"
@@ -60,8 +62,9 @@
 
             <Button
                 android:id="@+id/buttonh3"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h3"
                 android:text="Hafta 3 Hesaplama"
@@ -72,8 +75,9 @@
 
             <Button
                 android:id="@+id/buttonh4"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h4"
                 android:text="Hafta 4 Art Azalt"
@@ -84,8 +88,9 @@
 
             <Button
                 android:id="@+id/buttonh5"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h5"
                 android:text="Hafta 5 Şifreli giriş, Tahmin"
@@ -96,8 +101,9 @@
 
             <Button
                 android:id="@+id/buttonh6"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h6"
                 android:text="Hafta 6 Vücut kitle"
@@ -108,8 +114,9 @@
 
             <Button
                 android:id="@+id/buttonh19"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h11"
                 android:text="Hafta 11 for/while"
@@ -120,8 +127,9 @@
 
             <Button
                 android:id="@+id/buttonh20"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h13"
                 android:text="Hafta 13 random Intent prm"
@@ -132,8 +140,9 @@
 
             <Button
                 android:id="@+id/buttonh22"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h14"
                 android:text="Hafta 14 Kronometre"
@@ -144,8 +153,9 @@
 
             <Button
                 android:id="@+id/buttonh21"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h15"
                 android:text="Hafta 15 Asansör"
@@ -156,8 +166,9 @@
 
             <Button
                 android:id="@+id/buttonh23"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h18"
                 android:text="Hafta 18 WebView AlertDialog"
@@ -168,11 +179,25 @@
 
             <Button
                 android:id="@+id/buttonh25"
-                android:layout_width="320dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h2_1"
-                android:text="2. Dönem Hafta 1 Listview Spinner"
+                android:text="(2. Dönem) Hafta 1 Listview Spinner"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/buttonh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:fontFamily="casual"
+                android:onClick="h2_2"
+                android:text="Hafta 2 Resim Galerisi"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
