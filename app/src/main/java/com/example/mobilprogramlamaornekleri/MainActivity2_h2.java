@@ -2,6 +2,8 @@ package com.example.mobilprogramlamaornekleri;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.ScaleGestureDetector;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,9 +14,15 @@ import java.util.ArrayList;
 
 public class MainActivity2_h2 extends AppCompatActivity {
 
+    // Mobil Programlama Kitabı - 242. sayfa 11.uygulama
     private ActivityMainActivity2H2Binding binding;
     ArrayList<Gorsel> gorselArrayList;
     int seciliSiraNo;
+
+
+    // https://medium.com/quick-code/pinch-to-zoom-with-multi-touch-gestures-in-android-d6392e4bf52d
+    private ScaleGestureDetector scaleGestureDetector;
+    private float mScaleFactor = 1.0f;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +47,24 @@ public class MainActivity2_h2 extends AppCompatActivity {
         binding.textView.setText("Bilgi : \n" + gorselArrayList.get(0).bilgi);
         seciliSiraNo = 0;
 
+        scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent motionEvent) {
+        scaleGestureDetector.onTouchEvent(motionEvent);
+        return true;
+    }
+
+    private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {
+        @Override
+        public boolean onScale(ScaleGestureDetector scaleGestureDetector) {
+            mScaleFactor *= scaleGestureDetector.getScaleFactor();
+            mScaleFactor = Math.max(0.1f, Math.min(mScaleFactor, 10.0f));
+            binding.imageView.setScaleX(mScaleFactor);
+            binding.imageView.setScaleY(mScaleFactor);
+            return true;
+        }
     }
 
     public void geriGit(View view) {
@@ -58,6 +84,7 @@ public class MainActivity2_h2 extends AppCompatActivity {
     }
 
     public void SwipeIle(View view) {
+        // https://www.geeksforgeeks.org/image-slider-in-android-using-viewpager/
         Intent niyet = new Intent(this, MainActivity2swipe.class);
         startActivity(niyet);
     }
