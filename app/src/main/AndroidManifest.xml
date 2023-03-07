@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MobilProgramlamaOrnekleri"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2_h3havaDurumu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2swipe"
             android:exported="false" />
         <activity

@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void h2_3(View view) {
-        Intent i = new Intent(this, MainActivity2_h1.class);
+        Intent i = new Intent(this, MainActivity2_h3havaDurumu.class);
         startActivity(i);
     }
 

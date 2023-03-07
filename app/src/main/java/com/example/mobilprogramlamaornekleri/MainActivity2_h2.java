@@ -8,6 +8,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+
 import com.example.mobilprogramlamaornekleri.databinding.ActivityMainActivity2H2Binding;
 
 import java.util.ArrayList;
@@ -43,8 +44,8 @@ public class MainActivity2_h2 extends AppCompatActivity {
         gorselArrayList.add(resim3);
         gorselArrayList.add(resim4);
 
-        binding.imageView.setImageResource(gorselArrayList.get(0).foto);
-        binding.textView.setText("Bilgi : \n" + gorselArrayList.get(0).bilgi);
+        binding.imageViewOrnek.setImageResource(gorselArrayList.get(0).foto);
+        binding.textViewSonucMetni.setText("Bilgi : \n" + gorselArrayList.get(0).bilgi);
         seciliSiraNo = 0;
 
         scaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
@@ -61,8 +62,8 @@ public class MainActivity2_h2 extends AppCompatActivity {
         public boolean onScale(ScaleGestureDetector scaleGestureDetector) {
             mScaleFactor *= scaleGestureDetector.getScaleFactor();
             mScaleFactor = Math.max(0.1f, Math.min(mScaleFactor, 10.0f));
-            binding.imageView.setScaleX(mScaleFactor);
-            binding.imageView.setScaleY(mScaleFactor);
+            binding.imageViewOrnek.setScaleX(mScaleFactor);
+            binding.imageViewOrnek.setScaleY(mScaleFactor);
             return true;
         }
     }
@@ -70,16 +71,16 @@ public class MainActivity2_h2 extends AppCompatActivity {
     public void geriGit(View view) {
         if (seciliSiraNo > 0) {
             seciliSiraNo--;
-            binding.imageView.setImageResource(gorselArrayList.get(seciliSiraNo).foto);
-            binding.textView.setText("Bilgi : \n" + gorselArrayList.get(seciliSiraNo).bilgi);
+            binding.imageViewOrnek.setImageResource(gorselArrayList.get(seciliSiraNo).foto);
+            binding.textViewSonucMetni.setText("Bilgi : \n" + gorselArrayList.get(seciliSiraNo).bilgi);
         }
     }
 
     public void ileriGit(View view) {
         if (seciliSiraNo < gorselArrayList.size() - 1) {
             seciliSiraNo++;
-            binding.imageView.setImageResource(gorselArrayList.get(seciliSiraNo).foto);
-            binding.textView.setText("Bilgi : \n" + gorselArrayList.get(seciliSiraNo).bilgi);
+            binding.imageViewOrnek.setImageResource(gorselArrayList.get(seciliSiraNo).foto);
+            binding.textViewSonucMetni.setText("Bilgi : \n" + gorselArrayList.get(seciliSiraNo).bilgi);
         }
     }
 

@@ -19,6 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/buttonH3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="#2196F3"
@@ -198,6 +199,19 @@
                 android:fontFamily="casual"
                 android:onClick="h2_2"
                 android:text="Hafta 2 Resim Galerisi"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/buttonh7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:fontFamily="casual"
+                android:onClick="h2_3"
+                android:text="Hafta 3 Hava Durumu"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"

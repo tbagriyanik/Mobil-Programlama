@@ -19,7 +19,7 @@ public class MainActivityH11 extends AppCompatActivity {
 
     public void saydır(View V) {
         // 1. ÖRNEK
-        sayi = findViewById(R.id.textView);  // 1.ÖRNEK
+        sayi = findViewById(R.id.textViewSonucMetni);  // 1.ÖRNEK
         sayi.setText(""); //önce içini temizleyelim
         for (int i = 0; i <= 10; i++) {
             sayi.setText(sayi.getText().toString() + " " + i);

@@ -15,7 +15,7 @@ public class MainActivityH4 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_h4);
 
-        snc = findViewById(R.id.textView);
+        snc = findViewById(R.id.textViewSonucMetni);
     }
 
     public void art(View view) {
