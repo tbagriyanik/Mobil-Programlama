@@ -23,10 +23,17 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class MainActivity2_h3havaDurumu extends AppCompatActivity {
-    TextView cloudTextView, tempTextView, mintempTextView, maxtempTextview,
+    TextView cloudTextView, tempTextView, mintempTextView, maxtempTextview, konumTextView,
             updatedTextView, sunriseTextView, sunsetTextView, windTextView, pressureTextView, humidityTextView;
     Spinner ilSec;
-    String[] iller = {"ISTANBUL", "ANKARA", "IZMIR", "CANAKKALE", "NEVSEHIR", "IGDIR", "SINOP"};
+    String[] iller = {"ISTANBUL", "IZMIR", "ANKARA", "ADIYAMAN", "AFYONKARAHISAR", "AGRI", "AKSARAY", "AMASYA", "ANTALYA", "ARDAHAN", "ARTVIN", "AYDIN",
+            "BALIKESIR", "BARTIN", "BATMAN", "BAYBURT", "BILECIK", "BINGOL", "BITLIS", "BOLU", "BURDUR", "BURSA", "CANAKKALE", "CANKIRI", "CORUM",
+            "DENIZLI", "DIYARBAKIR", "DUZCE", "EDIRNE", "ELAZIG", "ERZINCAN", "ERZURUM", "ESKISEHIR", "GAZIANTEP", "GIRESUN",
+            "GUMUSHANE", "HAKKARI", "HATAY", "IGDIR", "ISPARTA", "MERSIN", "KARABUK", "KARAMAN", "KARS", "KASTAMONU", "KAYSERI", "KILIS", "KIRIKKALE",
+            "KIRKLARELI", "KIRSEHIR", "KOCAELI", "KONYA", "KUTAHYA", "MALATYA", "MANISA", "KAHRAMANMARAS", "MARDIN", "MUGLA",
+            "MUS", "NEVSEHIR", "NIGDE", "OSMANIYE", "ORDU", "RIZE", "SAKARYA", "SAMSUN", "SIIRT", "SINOP", "SIRNAK", "SIVAS", "TEKIRDAG", "TOKAT",
+            "TRABZON", "TUNCELI", "SANLIURFA", "USAK", "VAN", "YALOVA", "YOZGAT", "ZONGULDAK"};
+    //chatGPT ile iller getirildi
     private String sehirAdi = "ISTANBUL";
 
     // https://collectapi.com/tr/ birçok ücretiz api
@@ -39,6 +46,7 @@ public class MainActivity2_h3havaDurumu extends AppCompatActivity {
         setContentView(R.layout.activity_main_activity2_h3hava_durumu);
 
         //etiket nesneleri
+        konumTextView = findViewById(R.id.textView2);
         updatedTextView = findViewById(R.id.textViewSonucMetni);
         cloudTextView = findViewById(R.id.textViewBulut);
         tempTextView = findViewById(R.id.sicakliktextView4);
@@ -76,7 +84,6 @@ public class MainActivity2_h3havaDurumu extends AppCompatActivity {
     }
 
     public class DownloadTask extends AsyncTask<String, Void, String> {
-
         @Override
         protected String doInBackground(String... urls) {
             String result = "";
@@ -137,7 +144,9 @@ public class MainActivity2_h3havaDurumu extends AppCompatActivity {
                 String weatherDescription = weather.getString("description");
                 String address = jsonObject.getString("name") + ", " + sys.getString("country");
 
+                konumTextView.setText("Konumunuz\n" + address);
                 updatedTextView.setText(updatedAtText);
+
                 switch (weatherDescription) {
                     case "clear sky":
                         cloudTextView.setText("Bulut Yok");
@@ -167,7 +176,7 @@ public class MainActivity2_h3havaDurumu extends AppCompatActivity {
                         cloudTextView.setText("Sisli");
                         break;
                     default:
-                        cloudTextView.setText(""); //başka durumda boş
+                        cloudTextView.setText(weatherDescription); //başka durumda ingilizce gösterir
                         break;
                 }
 
@@ -181,6 +190,7 @@ public class MainActivity2_h3havaDurumu extends AppCompatActivity {
                 humidityTextView.setText("% " + humidity);
 
             } catch (Exception e) {
+                updatedTextView.setText("Bir sorun oluştu...");
                 e.printStackTrace();
             }
         }
