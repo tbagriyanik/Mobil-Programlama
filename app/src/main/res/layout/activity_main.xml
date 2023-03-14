@@ -42,7 +42,7 @@
                 android:layout_marginRight="9dp"
                 android:fontFamily="casual"
                 android:onClick="h1"
-                android:text="(1. Dönem) Hafta 1 Hesap makinesi"
+                android:text="(1. Dönem) Hafta 1 Hesap Makinesi"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
@@ -212,6 +212,19 @@
                 android:fontFamily="casual"
                 android:onClick="h2_3"
                 android:text="Hafta 3 Hava Durumu"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/buttonh8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:fontFamily="casual"
+                android:onClick="h2_4"
+                android:text="Hafta 4 Hesap Makinesi"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textStyle="bold"
