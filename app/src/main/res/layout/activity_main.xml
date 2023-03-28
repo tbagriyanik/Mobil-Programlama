@@ -229,7 +229,18 @@
                 android:textAllCaps="false"
                 android:textStyle="bold"
                 android:typeface="monospace" />
-
+            <Button
+                android:id="@+id/buttonh9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="9dp"
+                android:fontFamily="casual"
+                android:onClick="h2_6"
+                android:text="Hafta 6 Avatar"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:typeface="monospace" />
         </LinearLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

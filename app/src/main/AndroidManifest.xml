@@ -15,6 +15,9 @@
         android:theme="@style/Theme.MobilProgramlamaOrnekleri"
         tools:targetApi="31">
         <activity
+            android:name=".MainActivity2_h6avatar"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity2_h4HesapMak"
             android:exported="false" />
         <activity

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00E5FF"
+    android:backgroundTint="#00E5FF"
+    tools:context=".MainActivity2_h6avatar">
+
+    <ImageView
+        android:id="@+id/imageViewYUZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/yuz1" />
+
+    <ImageView
+        android:id="@+id/imageViewGOZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/goz2" />
+
+    <ImageView
+        android:id="@+id/imageViewGOZLUK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/gozluk1" />
+
+    <ImageView
+        android:id="@+id/imageViewAGIZ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/agiz1" />
+
+    <ImageView
+        android:id="@+id/imageViewBURUN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/burun1" />
+
+    <ImageView
+        android:id="@+id/imageViewSAC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/sac3" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avatar Yap"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewSAC">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5yuz"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yüz" />
+
+            <Button
+                android:id="@+id/button8yuzOnceki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="yuzOnce"
+                android:text="◀" />
+
+            <Button
+                android:id="@+id/buttonyuzSonraki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="yuzSonra"
+                android:text="▶" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5sac"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Saç" />
+
+            <Button
+                android:id="@+id/button8sacOnceki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sacOnceki"
+                android:text="◀" />
+
+            <Button
+                android:id="@+id/button9sacSonraki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sacSonra"
+                android:text="▶" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewgozluk"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Gözlük" />
+
+            <Button
+                android:id="@+id/button2GozlukOnce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gozlukOnceki"
+                android:text="◀" />
+
+            <Button
+                android:id="@+id/button3gozlukSonra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gozlukSonra"
+                android:text="▶" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView3goz"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Göz" />
+
+            <Button
+                android:id="@+id/button4gozOnce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gozOnceki"
+                android:text="◀" />
+
+            <Button
+                android:id="@+id/button5gozSonra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="gozSonra"
+                android:text="▶" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4burun"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Burun" />
+
+            <Button
+                android:id="@+id/button6burunOnce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="burunOnceki"
+                android:text="◀" />
+
+            <Button
+                android:id="@+id/button7burunSonra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="burunSonra"
+                android:text="▶" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5Agiz"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Ağız" />
+
+            <Button
+                android:id="@+id/button8agizOnce"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="agizOnceki"
+                android:text="◀" />
+
+            <Button
+                android:id="@+id/button9agizSonra"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="agizSonraki"
+                android:text="▶" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -89,8 +89,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void h2_5(View view) {
-        Intent i = new Intent(this, MainActivity2_h1.class);
+    public void h2_6(View view) {
+        Intent i = new Intent(this, MainActivity2_h6avatar.class);
         startActivity(i);
     }
 }
